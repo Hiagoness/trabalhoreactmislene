@@ -1,0 +1,456 @@
+/*theme.css*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* ---------------------------------------------------
+    CONTAINERS
+----------------------------------------------------- */
+
+
+body {
+    background-color: #EDF1F7 !important;
+    min-width: 320px;
+}
+
+#container {
+    width: var(--page-width);
+}
+
+
+/* ---------------------------------------------------
+    FONTS
+----------------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+@font-face {
+    font-family: 'Montserrat-Regular';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../Assets/fonts/Montserrat/Montserrat-Regular.ttf')
+}
+
+@font-face {
+    font-family: 'Montserrat-Medium';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../Assets/fonts/Montserrat/Montserrat-Medium.ttf')
+}
+
+@font-face {
+    font-family: 'Montserrat-SemiBold';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../Assets/fonts/Montserrat/Montserrat-SemiBold.ttf')
+}
+
+@font-face {
+    font-family: 'Montserrat-Bold';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../Assets/fonts/Montserrat/Montserrat-Bold.ttf')
+}
+
+/* ---------------------------------------------------
+    CONTENT
+----------------------------------------------------- */
+
+.h1 {
+    /* H1 - site */
+    font-family: Montserrat-SemiBold;
+    font-size: 36px;
+    line-height: 52px;
+    /* or 144% */
+    display: flex;
+    align-items: center;
+}
+
+    .h1.medium {
+        font-family: Montserrat-Medium;
+    }
+
+.h3 {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px !important;
+    line-height: 32px;
+    /* identical to box height, or 160% */
+    /* gray / white */
+    color: #FFFFFF;
+}
+
+.p1 {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.p2 {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    /* identical to box height, or 171% */
+    /* gray / white */
+    color: #FFFFFF;
+}
+
+/* ---------------------------------------------------
+    INPUTS
+----------------------------------------------------- */
+
+.app-input-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 0px 5px 0px;
+}
+
+input.app-input {
+    margin: 0px 0px 20px 0px;
+    padding: 6px 6px 6px 8px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    border: 1px solid #8F9BB3;
+    box-sizing: border-box;
+}
+
+input.app-input:focus {
+    border: 1px solid #0097FF !important;
+    box-sizing: border-box;
+    outline: none;
+}
+
+input.app-input::placeholder {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: var(--colot-gray-600);
+}
+
+.app-input-wrapper span.app-input-validation-msg {
+    color: var(--color-focus);
+    margin-left: 10px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: -20px;
+}
+
+.input-icon-wrapper {
+    position: relative;
+}
+
+.input-icon-wrapper input.app-input {
+    padding: 6px 35px 6px 8px;
+}
+
+.input-icon {
+    position: absolute;
+    top: 8px;
+    right: 25px;
+}
+
+/* ---------------------------------------------------
+    ICONES
+----------------------------------------------------- */
+
+
+.icon {
+    width: 20px;
+    height: 20px;
+    /* margin-top: 5px; */
+    display: inline-block;
+    vertical-align: -0.325em;
+}
+
+.icon-search {
+    background-color: black;
+    /* defines the background color of the image */
+    mask: url(../Assets/icons/saearch-icon.svg) no-repeat center / contain;
+    -webkit-mask: url(../Assets/icons/saearch-icon.svg) no-repeat center / contain;
+}
+
+.icon-arrow-left {
+    background-color: black;
+    /* defines the background color of the image */
+    mask: url(../Assets/icons/arrow-left-icon.svg) no-repeat center / contain;
+    -webkit-mask: url(../Assets/icons/arrow-left-icon.svg) no-repeat center / contain;
+}
+
+.icon-display-list {
+    background-color: black;
+    /* defines the background color of the image */
+    mask: url(../Assets/icons/list-display-icon.svg) no-repeat center / contain;
+    -webkit-mask: url(../Assets/icons/list-display-icon.svg) no-repeat center / contain;
+}
+
+.icon-display-card {
+    background-color: black;
+    /* defines the background color of the image */
+    mask: url(../Assets/icons/card-display-icon.svg) no-repeat center / contain;
+    -webkit-mask: url(../Assets/icons/card-display-icon.svg) no-repeat center / contain;
+}
+
+
+.app-navbar input {
+    color: #FFFFFF;
+}
+
+.app-navbar input::placeholder {
+    color: #FFFFFF;
+}
+
+.app-navbar .icon {
+    background-color: #FFFFFF;
+}
+
+.app-navbar input.app-input-search {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+}
+
+/* ---------------------------------------------------
+    TABS
+----------------------------------------------------- */
+
+.app-tab-wrapper {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: left !important;
+    align-items: center !important;
+    flex-wrap: wrap;
+}
+
+.app-tab {
+    margin: 10px 20px 10px 0px;
+
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;    
+    display: flex;
+    align-items: center;    
+    color: #8F9BB3;
+    white-space: nowrap;
+    cursor: pointer;
+    /* text-shadow: 0px 20px 4px rgba(33, 33, 33, 0.25); */
+}
+
+.app-tab:hover
+{
+    color: #D03427;
+    text-shadow: 0px 7px 4px rgba(33, 33, 33, 0.25);
+    text-decoration: none;
+} 
+
+.app-tab:focus {
+    color: #D03427;
+    text-shadow: 0px 7px 4px rgba(33, 33, 33, 0.25);
+    text-decoration: underline;
+    outline: none;
+}
+
+.app-tab-active {
+    font-weight: bold;
+    color: #D03427;
+}
+
+.app-tab-btn{
+    border: 1px solid #C5CEE0;
+    border-radius: 25px;
+    height: 48px;
+    width: 48px;
+}
+
+.app-tab-btn:hover{
+    box-shadow: 0px 7px 4px rgba(33, 33, 33, 0.25);
+}
+
+.app-tab-btn .icon{
+    margin-left: 13px;
+}
+.app-tab-btn:hover .icon{
+    background-color: #D03427;
+}
+.app-tab-btn:focus {
+    border: 1px solid #D03427;
+    box-shadow: 0px 7px 4px rgba(33, 33, 33, 0.25);
+}
+
+/* ---------------------------------------------------
+    BUTTONS
+----------------------------------------------------- */
+
+.app-btn {
+    border-radius: 4px;
+    height: 48px;
+    text-align: center;
+    padding: 10px 20px;
+    border: none;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.app-btn-xs{
+    height: 40px;
+}
+
+.app-btn:hover, 
+.app-btn:focus {
+    border: 1px solid #0097FF;
+    padding: 09px 19px;
+    outline: none;
+}
+
+.app-btn:active {
+    border: 1px solid black;
+    box-shadow: 0px 20px 24px rgba(33, 33, 33, 0.25);
+    /* padding: 09px 19px; */
+    /* outline: none; */
+}
+
+.app-btn-focus {
+    color: #FFFFFF;
+    background: var(--color-focus);
+}
+
+    .app-btn-focus:hover,
+    .app-btn-focus:focus {
+        color: #FFFFFF;
+        box-shadow: 0px 20px 24px rgba(33, 33, 33, 0.25);
+    }
+    .app-btn-focus:disabled:hover,
+    .app-btn-focus:disabled:focus {
+        color:#666666;
+        border: none;
+        box-shadow: none;
+    }
+
+/* ---------------------------------------------------
+    PAGES 
+----------------------------------------------------- */
+
+.app-page-wrapper {
+    display: flex!important;
+    flex-direction: column!important;
+    justify-content: center!important;
+    align-items: center!important;
+}
+
+.app-page-content {
+    max-width: 1056px;
+    /* -----------------------------------------
+    Calcula um espço para desconsidera a lagura da barra
+    de rolagem da pagina que pode afetar o posicionamento 
+    do elmento caso estea visível
+    -------------------------------------------- */
+    /* margin-left: calc(100vw - 100% - 10vw); */
+
+}
+
+.app-page-content-size-small {
+    width: calc(100% /12 * 4);
+}
+
+.app-page-content-size-medium {
+    width: calc(100% /12 * 8);
+}
+
+.app-page-content-size-large {
+    width: calc(100% /12 * 12);
+}
+
+.app-page-return-btn {
+    border: none;
+    background-color: inherit;
+    color: #0097FF;
+    cursor: pointer;
+    outline: none;
+    margin-bottom: 5px;
+    padding-left: 0px;
+}
+
+.app-page-return-btn:hover,
+.app-page-return-btn:focus {
+    text-decoration: underline;
+    outline: none;
+}
+
+.app-page-return-btn:active {
+    box-shadow: 0px 20px 24px rgba(33, 33, 33, 0.25);
+    outline: none;
+}
+
+.app-page-return-btn .icon {
+    margin-right: 5px;
+    background-color: #0097FF;
+}
+
+/* ---------------------------------------------------
+    COLUMNS
+----------------------------------------------------- */
+
+.app-col-1 {
+    width: calc(100% /12 * 1);
+}
+
+.app-col-2 {
+    width: calc(100% /12 * 2);
+}
+
+.app-col-3 {
+    width: calc(100% /12 * 3);
+}
+
+.app-col-4 {
+    width: calc(100% /12 * 4);
+}
+
+.app-col-4 {
+    width: calc(100% /12 * 5);
+}
+
+.app-col-6 {
+    width: calc(100% /12 * 6);
+}
+
+.app-col-7 {
+    width: calc(100% /12 * 7);
+}
+
+.app-col-8 {
+    width: calc(100% /12 * 8);
+}
+
+.app-col-9 {
+    width: calc(100% /12 * 9);
+}
+
+.app-col-10 {
+    width: calc(100% /12 * 10);
+}
+
+.app-col-11 {
+    width: calc(100% /12 * 11);
+}
+
+.app-col-12 {
+    width: calc(100% /12 * 12);
+}
