@@ -1,0 +1,36 @@
+.login-container {
+    /*https://www.w3schools.com/howto/howto_css_full_page.asp*/
+    background: #59534C;
+    background-image: url('./content/login-background.jpg');
+    height: 100vh;
+    min-height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+[name='form-login'] {
+    background: #ffffff;
+    height: 472px;
+    width: 100%;
+    max-width: 450px !important;
+    margin: 30px auto;
+    border-radius: 8px;
+    padding: 0px 20px;
+    /* 
+    display: flex;
+    flex-direction: column;
+    align-items: center; */
+    /* justify-content: space-between; */
+}
+
+    [name='form-login'] img {
+        margin-top: 43px;
+    }
+
+[name='form-login-img-wrapper'] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 58.5px;
+}

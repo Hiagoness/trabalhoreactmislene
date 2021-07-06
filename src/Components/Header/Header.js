@@ -7,8 +7,6 @@ const Header = () => {
 
     const history = useHistory();
 
-
-
     return (
 
         <section name='navbar'>

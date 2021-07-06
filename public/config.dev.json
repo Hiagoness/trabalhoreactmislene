@@ -1,6 +1,6 @@
 {
     "Services":{
-        "AumaCafeApi": {           
+        "TrabalhoReactMislene": {           
             "ApiUrl": "https://localhost:44314/",              
             "ApiUrlAzure":"http://demo-bwkm.eastus.cloudapp.azure.com:5051/",
             "ApiUrlLocal":"http://localhost:8000/"

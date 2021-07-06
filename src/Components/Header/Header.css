@@ -1,0 +1,33 @@
+.sidebarCollapse{
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+.sidebarCollapse:hover,
+.sidebarCollapse:focus,
+.sidebarCollapse:active{
+    outline: none;
+    border: none;
+}
+
+[name='fixed-nav-top-horizontal'] {
+    background: #d03427;
+    margin-bottom: 15px;
+    height: 68px;
+}
+
+[name='btnSair'] {
+    background: #d03427;
+    outline: none;
+    border: none;
+    cursor: pointer;    
+}
+[name="header-logo"]{
+    cursor: pointer;
+}
+
+[name="sair"]{
+    margin-right: 43px;
+}
+
