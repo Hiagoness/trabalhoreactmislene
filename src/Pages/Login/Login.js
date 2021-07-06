@@ -43,23 +43,13 @@ const Login = () => {
         }
 
         var result = null;
+        console.log(dados);
+        debugger
         result = await Services.Auth.login(dados);
-        const token = DecodeTokenJwt(result.accessToken);
         debugger
         setLoading(false);
-
-        if (token.role === _Role.Administrador.Descricao ) {
             let path = `/home`;
             history.push(path);
-        }
-        else {
-
-            let mod = Object.assign(new LoginModel(), model);
-            mod.Senha = '';
-
-            alert('Login inválido');
-            setModel(mod);
-        }
 
     }
 

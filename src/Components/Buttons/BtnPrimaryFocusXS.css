@@ -6,3 +6,7 @@ button[disabled]{
   padding: 09px 19px;
   outline: none;
 }
+
+button{
+  background-color: #2e2664
+}

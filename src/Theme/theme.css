@@ -251,13 +251,13 @@ input.app-input::placeholder {
 
 .app-tab:hover
 {
-    color: #D03427;
+    color: #123759;
     text-shadow: 0px 7px 4px rgba(33, 33, 33, 0.25);
     text-decoration: none;
 } 
 
 .app-tab:focus {
-    color: #D03427;
+    color: #123759;
     text-shadow: 0px 7px 4px rgba(33, 33, 33, 0.25);
     text-decoration: underline;
     outline: none;
@@ -265,7 +265,7 @@ input.app-input::placeholder {
 
 .app-tab-active {
     font-weight: bold;
-    color: #D03427;
+    color: #123759;
 }
 
 .app-tab-btn{
@@ -283,10 +283,10 @@ input.app-input::placeholder {
     margin-left: 13px;
 }
 .app-tab-btn:hover .icon{
-    background-color: #D03427;
+    background-color: #123759;
 }
 .app-tab-btn:focus {
-    border: 1px solid #D03427;
+    border: 1px solid #123759;
     box-shadow: 0px 7px 4px rgba(33, 33, 33, 0.25);
 }
 
@@ -314,7 +314,7 @@ input.app-input::placeholder {
 
 .app-btn:hover, 
 .app-btn:focus {
-    border: 1px solid #0097FF;
+    border: 1px solid;
     padding: 09px 19px;
     outline: none;
 }
@@ -328,12 +328,13 @@ input.app-input::placeholder {
 
 .app-btn-focus {
     color: #FFFFFF;
-    background: var(--color-focus);
+    background: #123759;
 }
 
     .app-btn-focus:hover,
     .app-btn-focus:focus {
         color: #FFFFFF;
+        background: #1a4874;
         box-shadow: 0px 20px 24px rgba(33, 33, 33, 0.25);
     }
     .app-btn-focus:disabled:hover,
