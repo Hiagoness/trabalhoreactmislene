@@ -1,6 +1,5 @@
 import { auth } from './FirebaseService';
 import { BehaviorSubject } from 'rxjs';
-import { handleResponse } from '../Assets/handleResponse/handleResponse';
 const currentUserSubject = new BehaviorSubject(JSON.parse(localStorage.getItem('user')));
 
 export const authenticationService = {
@@ -41,16 +40,11 @@ export default class AuthService {
 
     async register(data) {
 
-        let resource = "api/signup";
-        let url = this.urlBase + resource;
 
         return new Promise(resolve =>
 
-            fetch(url, {
-                method: 'POST',
-                body: JSON.stringify(data),
-                headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' }
-            }).then(function (response) {
+            auth.createUserWithEmailAndPassword(data.email, data.senha)
+            .then(function (response) {
 
                 if (!response.ok) {
                     return false

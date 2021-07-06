@@ -1,4 +1,5 @@
 import firebase from "firebase/app";
+import "firebase/database";
 import "firebase/auth";
 
 const app = firebase.initializeApp({
@@ -9,7 +10,9 @@ const app = firebase.initializeApp({
     storageBucket: "trabalhoreactmislene-b9adb.appspot.com",
     messagingSenderId: "423003406414",
     appId: "1:423003406414:web:f25ab63a7e548b3ebf831f"
-});
+}); 
 
+export var database = app.database();
+export const dbRef = database.ref();
 export const auth = app.auth();
 export default app;

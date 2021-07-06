@@ -12,13 +12,13 @@
 }
 
 [name='fixed-nav-top-horizontal'] {
-    background: #d03427;
+    background: #123759;
     margin-bottom: 15px;
     height: 68px;
 }
 
 [name='btnSair'] {
-    background: #d03427;
+    background: #123759;
     outline: none;
     border: none;
     cursor: pointer;    
