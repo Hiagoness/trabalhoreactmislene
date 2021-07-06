@@ -1,8 +1,9 @@
-import './Login.css'
+import './login.css'
 import React, { useState } from 'react';
 import { useHistory } from "react-router-dom";
 import Email from '../../Components/Inputs/Email/Email';
 import Senha from '../../Components/Inputs/Senha/Senha';
+import BtnPrimaryFocusXS from '../../Components/Buttons/BtnPrimaryFocusXS';
 import Services from '../../Services/TrabalhoReactMisleneServices';
 import alertify from 'alertifyjs';
 import { Link } from 'react-router-dom';
@@ -98,9 +99,9 @@ const Login = () => {
                                                 Esqueci a senha
                                             </Link>
 
-                                            <button name="btn-login" onClick={efetuaLogin}>
+                                            <BtnPrimaryFocusXS name="btn-login" onClick={efetuaLogin}>
                                                 Entrar
-                                            </button>
+                                            </BtnPrimaryFocusXS>
                                         </div>
 
                                     </div>

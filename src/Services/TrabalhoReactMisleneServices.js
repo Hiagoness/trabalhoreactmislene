@@ -1,11 +1,9 @@
-import Config from 'Config';
 import AuthHeaderService from './AuthHeaderService';
 import AuthService from './AuthService';
 import UsuariosService from './UsuariosService'; 
 import CadastroService from './CadastroService'; 
 
 
-const urlBase = Config.Services.TrabalhoReactMislene.ApiUrl; 
 
 export default class Services {
 
@@ -14,14 +12,14 @@ export default class Services {
     }
     
     static get Auth() {
-        return new AuthService({urlBase: urlBase});
+        return new AuthService();
     }
 
     static get Usuarios() {
-        return new UsuariosService({urlBase: urlBase});
+        return new UsuariosService();
     }
 
     static get Cadastro() {
-        return new CadastroService({urlBase: urlBase});
+        return new CadastroService();
     }
 }

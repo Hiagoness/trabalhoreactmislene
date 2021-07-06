@@ -1,7 +1,6 @@
 .login-container {
     /*https://www.w3schools.com/howto/howto_css_full_page.asp*/
-    background: #59534C;
-    background-image: url('./content/login-background.jpg');
+    background: #2e2664;
     height: 100vh;
     min-height: 600px;
     background-position: center;
@@ -33,4 +32,8 @@
     flex-direction: column;
     align-items: center;
     margin-bottom: 58.5px;
+}
+
+img {
+    max-width: 100%;
 }

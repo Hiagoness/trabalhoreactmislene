@@ -1,0 +1,8 @@
+button:disabled,
+button[disabled]{
+  background-color: #cccccc;
+  color: #666666;
+  border: none;
+  padding: 09px 19px;
+  outline: none;
+}
