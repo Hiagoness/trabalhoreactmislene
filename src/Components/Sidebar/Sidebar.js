@@ -9,7 +9,6 @@ import Services from '../../Services/TrabalhoReactMisleneServices';
 
 const tabs = {
     Usuarios: 'Usuarios',
-    Cadastro: 'Cadastro',
     Home: 'Home'
 }
 
@@ -39,9 +38,6 @@ const Sidebar = props => {
 
         if (location.pathname.includes('/Usuarios')) {
             return tabs.Usuarios;
-        }
-        else if (location.pathname.includes('/Cadastro')) {
-            return tabs.Cadastro;
         }
         else if (location.pathname.includes('/home')) {
             return tabs.Home;
@@ -102,14 +98,6 @@ const Sidebar = props => {
                             <i className="fas fa-user"></i>
                             <br></br>
                             <span>Usuários</span>
-                        </Link>
-                    </li>
-
-                    <li className={currentTab === tabs.Cadastro ? "active closeOpenSidebar" : "closeOpenSidebar"}>
-                        <Link className="side-bar-link" to="/Cadastro">
-                            <i className="fas fa-money-check-alt"></i>
-                            <br></br>
-                            <span>Cadastro</span>
                         </Link>
                     </li>
 

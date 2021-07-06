@@ -1,0 +1,22 @@
+  .table-responsive.react-bootstrap-table table {
+    table-layout: auto;
+  }
+
+  .table-responsive.react-bootstrap-table .td-action,
+  .table-responsive.react-bootstrap-table .th-action{
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    right: -1px;
+    min-width:30px;
+    background: #EDF1F7;
+
+  }
+
+  .table-responsive.react-bootstrap-table .th-action{
+    background: #EDF1F7;
+  }
+
+  .page-item.active .page-link{
+    background-color: #e84410;
+    border-color: #e84410;
+  }

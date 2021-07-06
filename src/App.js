@@ -8,7 +8,6 @@ import { _LevelRoles } from './ConfigUrl.js';
 
 import Home from './Pages/Home/Home';
 import Usuarios from './Pages/Usuarios/Usuarios';
-import Cadastro from './Pages/Cadastro/Cadastro';
 
 function App() {
     return (
@@ -22,7 +21,6 @@ function App() {
                             <Switch>
                                 <PrivateRoute path='/Home' exact component={Home} roles={[_LevelRoles.Administrador]} />
                                 <PrivateRoute path='/Usuarios' exact component={Usuarios} roles={[_LevelRoles.Administrador]} />
-                                <PrivateRoute path='/Cadastro' exact component={Cadastro} roles={[_LevelRoles.Administrador]} />
                             </Switch>
                         </section>
                     </div>
